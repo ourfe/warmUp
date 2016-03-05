@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>这里是Shaco</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="js/rainyday.js"></script>
+    <script>
+        function clock(){
+            var ABC=setTimeout("run()",10000);
+        }
+        function run() {
+            var image = document.getElementById('background');
+            image.onload = function() {
+                var engine = new RainyDay({
+                    image: this
+                });
+                engine.rain([ [0, 2, 200], [3, 3, 1] ], 100);
+            };
+            image.crossOrigin = 'anonymous';
+            image.src = "images/140238-106.jpg";
+        }
+    </script>
+</head>
+<body onload="clock();">
+    <div class="head">
+        <div class="header">
+            <h1>咱的前端</h1>
+        </div>
+        <div class="text">
+            <div class="main">
+                <div class="img">
+                <img src="images/11.jpg">
+                </div>
+                <h2>Shaco</h2>
+                <p>好好学习，天天向上 ←◡←</p>
+            </div>
+        </div>
+    </div>
+    <img id="background"  src="" />
+</body>
+</html>
