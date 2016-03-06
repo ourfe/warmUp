@@ -7,9 +7,12 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{ test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader", "sass-loader") }]
+    loaders: [{
+      test: /\.scss$/,
+      loader: ExtractTextPlugin.extract("style", "css!sass")
+    }]
   },
-    plugins: [
-        new ExtractTextPlugin("styles.css")
-    ]
+  plugins: [
+    new ExtractTextPlugin("styles.css")
+  ]
 }
