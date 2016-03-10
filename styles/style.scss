@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,700');
+
+html {
+	font-family: 'Source Code Pro', 'Helvetica Neue', 'Helvetica', Simsun, 'Arial';
+	font-weight: 400;
+	font-size: 16px;
+	color: #444;
+}
+
+html,
+body,
+.container {
+	height: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a:link,
+a:focus,
+a:visited {
+	color: #666;
+}
+
+a:hover {
+	color: #aaa;
+}
+
+html,
+body,
+.container,
+.header,
+.detail-wrapper,
+.member-list {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	min-height: 300px;
+	// background-image: url('https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925 Failed to load resource: net::ERR_CONTENT_LENGTH_MISMATCH');
+	background-image: url('../assets/images/mountain.jpeg');
+	background-position: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#team-title {
+	font-weight: 200;
+	font-size: 80px;
+	color: #fafafa;
+	word-spacing: 1rem;
+	text-transform: uppercase;
+}
+
+.nav {
+	min-height: 60px;
+	background-color: #000;
+	.nav-list {
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	li {
+		display: block;
+		min-width: 80px;
+	}
+	a {
+		display: block;
+		line-height: 60px;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		&:hover {
+			background-color: #3ab795;
+			text-decoration: underline;
+		}
+	}
+}
+
+.member-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.member-item {
+	flex: 1;
+	padding: 10px 25px;
+}
+
+.member-name {
+	text-align: center;
+	font-size: 30px;
+	margin: 10px 0 20px;
+}
+
+.member-intro {
+	font-size: 20px;
+}
+
+.footer {
+	min-height: 60px;
+	text-align: center;
+	margin-top: 60px;
+}
