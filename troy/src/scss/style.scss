@@ -16,7 +16,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	width: 50%;
 	height: 100%;
 }
 
@@ -35,6 +34,12 @@ body {
 	transition: 0.4s;
 	&:hover {
 		-webkit-filter: blur(0)
+	}
+}
+
+@media screen and(max-width: 800px) {
+	.name {
+		-webkit-filter: blur(0);
 	}
 }
 
