@@ -61,6 +61,7 @@ body,
 	background-color: #000;
 	.nav-list {
 		margin: 0;
+		padding: 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -83,14 +84,17 @@ body,
 }
 
 .member-list {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-columns: 3 270px;
+	-moz-columns: 3 270px;
 }
 
 .member-item {
-	flex: 1;
 	padding: 10px 25px;
+	-webkit-column-break-inside: avoid;
+
+	//firefox,safari
+	page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 .member-name {
